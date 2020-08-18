@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Module4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link type="text/css" rel="stylesheet" href="module3.css"/> -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" > -->
+        <link type="text/css" rel="stylesheet" href="module4.css"/>
+        
+    </head>
+    <body>
+
+        <div class="block">
+            
+            <button class="button" type="button" onclick="Display()" >Display the list of Names</button>
+            <p id="show"></p>
+    
+        </div>
+        <script>
+            var a = ["bhargav","jack","kaushik","Jayanth"];
+
+            
+           
+
+              function Display()
+            {
+                for(var i=0;i<a.length;i++){
+                var z= a[i].charAt(0);
+
+            
+
+                if(z=="j" || z=="J"){
+                    document.getElementById("show").innerHTML+= "Goodbye  "+a[i] + "<br>"; 
+
+                }
+                else {
+                    document.getElementById("show").innerHTML+="Hello  "+a[i] + "<br>";
+                }
+            }
+            }
+
+           
+
+          
+        </script>
+
+    </body>
+</html>        
